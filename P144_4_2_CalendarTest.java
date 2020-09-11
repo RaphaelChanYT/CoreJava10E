@@ -1,13 +1,6 @@
-import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.Month;
 
-/**
- * This program demonstrates a <code>while</code> loop.
- * @version 1.20 2004-02-10
- * @author Cay Horstmann
- */
-public class test001 {
+public class P144_4_2_CalendarTest {
     public static void main(String[] args) {
         /*LocalDate date = LocalDate.now();
         System.out.println(date);
@@ -28,7 +21,7 @@ public class test001 {
         //System.out.println(weekValueFDiM);
 
         System.out.println(thisMonth);
-        System.out.println("Mon Tue Wed Thu Fri Sat Sun");
+        System.out.println("Mon Tue Wed Thu Fri Sat Sun ");
         for(int i_1 = 1; i_1 < weekValueFDiM; i_1++){
             System.out.print("    ");
         }
@@ -46,7 +39,7 @@ public class test001 {
             System.out.printf("%3d", firstDateInMonth.getDayOfMonth());
 
             if(firstDateInMonth.getDayOfMonth() == valueToday)
-                System.out.printf("*");
+                System.out.print("*");
             else
                 System.out.print(" ");
 
@@ -56,6 +49,10 @@ public class test001 {
 
             firstDateInMonth = firstDateInMonth.plusDays(1);
         }
+
+
+        if(firstDateInMonth.getDayOfWeek().getValue() != 1)
+            System.out.println();
 
 
     }
