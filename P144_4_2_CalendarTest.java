@@ -1,5 +1,11 @@
 import java.time.LocalDate;
 
+/**
+* Test in 4.2
+* Make a month calendar
+* Core Java 10e
+ */
+
 public class P144_4_2_CalendarTest {
     public static void main(String[] args) {
         /*LocalDate date = LocalDate.now();

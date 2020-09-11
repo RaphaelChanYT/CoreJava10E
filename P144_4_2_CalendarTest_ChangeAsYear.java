@@ -1,5 +1,9 @@
 import java.time.LocalDate;
 
+/**
+* Change the test in 4.2 to a year calendar
+* Core Java 10e
+ */
 public class P144_4_2_CalendarTest_ChangeAsYear {
     public static void main(String[] args) {
 
@@ -20,6 +24,10 @@ public class P144_4_2_CalendarTest_ChangeAsYear {
         while(workDay.getYear() == 2020){
             if(workDay.getMonth().getValue() != 1)
                 System.out.println();
+            else {
+                System.out.println("Hello 2020");
+                System.out.println();
+            }
             System.out.println(workDay.getMonth());
             System.out.println("Mon Tue Wed Thu Fri Sat Sun ");
             var weekValue = workDay.getDayOfWeek().getValue();
